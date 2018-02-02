@@ -32,7 +32,7 @@ header{
     justify-content: center;
 }
 
-.borja{
+ .borja{
     grid-column: 5 / 8;
     grid-row: 2 / 3;
     background-color: white; 
@@ -100,6 +100,7 @@ a{
     background-color:darkgrey;
 }
 
+
 .art1{
     grid-column: 2 / 12;
     grid-row: 5 / 9;
@@ -107,6 +108,7 @@ a{
     border: solid black 2px;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 5px;
+    box-shadow: 5px 5px;
 }
 
 .art2{
@@ -116,9 +118,17 @@ a{
     border: solid black 2px;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 5px;
+    box-shadow: 5px 5px;
 }
 
 h2{
     text-align: center;
+}
+
+.footer{
+    grid-column: 11 / 13;
+    grid-row: 12 / 13;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
 }
 
