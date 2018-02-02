@@ -132,3 +132,120 @@ h2{
     padding-left: 10px;
 }
 
+@media only screen and (max-device-width: 670px) and (min-device-width: 375px){
+    
+    .container{
+        width: 375px;
+        height: 1500px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(17, 1fr); 
+    }
+
+    header{
+        grid-column: 1/ 5;
+        grid-row: 1 / 6;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .bild{
+        grid-column: 1 / 5;
+        grid-row: 1 / 4;
+        display: grid;
+        
+    }
+    
+     .borja{
+        grid-column: 1 / 5;
+        grid-row: 4 / 5;
+
+    }
+    
+    .borja a{
+        color: black;
+    }
+    
+    .borja a:hover{
+        color: darkred;
+    }
+       
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .dropbtn {
+        background-color: white;
+        color: black;
+        padding: 16px;
+        font-size: 26px;
+        border: solid black 2px;
+    }
+    
+    .dropdown {
+        grid-column: 1 / 5;
+        grid-row: 5 / 6;
+        display: grid;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        color: darkred;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+        background-color:darkgrey;
+    }
+    
+    .art1{
+        grid-column: 1 / 5;
+        grid-row: 7 / 13;
+        background-color: white;
+        border: solid black 2px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 5px;
+    }
+    
+    .art2{
+        grid-column: 1 / 5;
+        grid-row: 14 / 17;
+        background-color: white;
+        border: solid black 2px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 5px;
+    }
+    
+    h2{
+        text-align: center;
+    }
+    
+    .footer{
+        grid-column: 1 / 5;
+        grid-row: 17 / 18;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 10px;
+    }
+}
+
+
