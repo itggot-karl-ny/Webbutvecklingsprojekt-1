@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <title>Seniorträning</title>
 </head>
 <body>
     <div class="container">
@@ -13,19 +13,21 @@
             <div class="bild">
                 <img src="img/senior2.png" alt="logo">
             </div>
+            <div class="bild2">
+                <img src="img/senior1.png" alt="logo">
+            </div>
             <div class="borja">
                 <a href="#"><b>Börja träna</b></a>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn"><b>Meny</b> <i class="fa fa-caret-down" style="font-size:26px"></i></button>
-                <div class="dropdown-content">
-                  <a href="#">Om oss</a>
-                  <a href="#">Inloggning</a>
-                  <a href="#">Kontaktuppgifter</a>
-                </div>
-              </div>
+            <div class="menudiv .expandDiv" >
+                <h1 class="material-icons" onclick="toggleMenu()">Meny <i class="fa fa-caret-down" style="font-size:26px"></i></h1>
+                <ul class="menu">
+                    <a href="#">Om oss</a>
+                    <a href="#">Inloggning</a>
+                    <a href="#">Kontaktuppgifter</a>
+                </ul>
+            </div>
         </header>
-        
         <div class="art1">
             <h2>Välkomen till Seniorträning</h2>
             <p>Det finns många olika varianter av Lorem Ipsum, men majoriteten av dessa har ändrats på någotvis. Antingen med inslag av humor, eller med inlägg av ord som knappast ser trovärdiga ut. Skall man använda långa stycken av Lorem Ipsum bör man försäkra sig om att det inte gömmer sig något pinsamt mitt i texten. Lorem Ipsum-generatorer på internet tenderar att repetera Lorem Ipsum-texten styckvis efter behov, något som gör denna sidan till den första riktiga Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformationer osv.I motsättning till vad många tror, är inte Lorem Ipsum slumpvisa ord. Det har sina rötter i ett stycke klassiskt litteratur på latin från 45 år.</p>
@@ -34,10 +36,10 @@
             <h2>Hur ska du börja?</h2>
             <p>Den ursprungliga Lorem Ipsum-texten från 1500-talet är återgiven nedan för de intresserade. Styckena 1.10.32 och 1.10.33 från "de Finibus Bonorum et Malorum" av Cicero hittar du också i deras originala form, åtföljda av de engelska.</p>
         </div>
-
         <div class="footer">
             <p>Karl Ny</p><p>ITG-Göteborg</p>
         </div>
+        <script src="js/menu.js"></script>
     </div>
 </body>
 </html>

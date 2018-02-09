@@ -7,6 +7,7 @@
     margin-right: auto;
     display: grid;
     grid-column-gap: 2px;
+    grid-row-gap: 2px;
     background-color: rgb(155, 149, 149);
     background: linear-gradient(to right, rgb(104, 104, 104) , lightgrey);
 }
@@ -32,7 +33,18 @@ header{
     justify-content: center;
 }
 
-.borja{
+.bild2{
+    grid-column: 1 / 4;
+    grid-row: 1 / 5;
+    display: none;
+    background-color: white;
+    border-radius: 50%;
+    border: solid black 2px;
+    align-content: center;
+    justify-content: center;
+}
+
+.borja {
     grid-column: 5 / 8;
     grid-row: 2 / 3;
     background-color: white; 
@@ -62,51 +74,47 @@ a:hover{
     color: darkred;
 }
 
-
-.dropbtn {
-    background-color: white;
-    color: black;
-    padding: 16px;
-    font-size: 26px;
-    border: solid black 2px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.dropdown {
+.menudiv{
     grid-column: 9 / 12;
     grid-row: 2 / 3;
-    display: grid;
-}
+    position: relative;
+    background: white;
+    border: solid black 2px;
+ }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 210px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ .menudiv *{
+    background-color: white;
+    font-size: 26px;
     font-family: Arial, Helvetica, sans-serif;
-}
+ }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
+ .menu a{
+    font-size: 20px;
+ }
 
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
+ .menudiv h1{
+    text-align: center;
+ }
+
+ .menudiv:hover h1{
+    text-align: center;
     color: darkred;
-}
+ }
 
-.dropdown:hover .dropdown-content {
+ .menu {
+    display: none;
+    position: absolute;  
+    top: 45px
+ }
+
+.show{
     display: block;
+    grid-row: 2 / 4;
 }
 
-.dropdown:hover .dropbtn {
-    background-color:darkgrey;
+.expandDiv {
+    /* grid-row: 2/4; */
 }
-
 
 .art1{
     grid-column: 2 / 12;
@@ -159,8 +167,18 @@ h2{
     .bild{
         grid-column: 1 / 5;
         grid-row: 1 / 4;
+        display: none;
+    }
+
+    .bild2{
+        grid-column: 1 / 5;
+        grid-row: 1 / 4;
         display: grid;
-        
+        background-color: white;
+        border-radius: 50%;
+        border: solid black 2px;
+        align-content: center;
+        justify-content: center;
     }
     
      .borja{
@@ -182,7 +200,46 @@ h2{
         color: black;
     }
     
-    .dropbtn {
+    .menudiv{
+        grid-column: 1 / 5;
+        grid-row: 5 / 6;
+        position: sticky;
+        background: white;
+        border: solid black 2px;
+     }
+    
+     .menudiv *{
+        background-color: white;
+        font-size: 26px;
+        font-family: Arial, Helvetica, sans-serif;
+     }
+    
+     .menu a{
+        font-size: 20px;
+     }
+    
+     .menudiv h1{
+        text-align: center;
+     }
+    
+     .menudiv:hover h1{
+        text-align: center;
+        color: darkred;
+     }
+    
+     .menu {
+        display: none;
+     }
+    
+    .show{
+        display: block;
+        grid-row: 5 / 6;
+    }
+    
+    .expandDiv {
+        grid-row: 5/6;
+    }
+    /* .dropbtn {
         background-color: white;
         color: black;
         padding: 16px;
@@ -207,7 +264,7 @@ h2{
     
     .dropdown-content a {
         color: black;
-        padding: 12px 16px;
+        padding: 30px 16px;
         text-decoration: none;
         display: block;
     }
@@ -223,7 +280,7 @@ h2{
     
     .dropdown:hover .dropbtn {
         background-color:darkgrey;
-    }
+    } */
     
     .art1{
         grid-column: 1 / 5;
@@ -232,6 +289,7 @@ h2{
         border: solid black 2px;
         font-family: Arial, Helvetica, sans-serif;
         padding-left: 5px;
+        box-shadow: none;
     }
     
     .art2{
@@ -241,6 +299,7 @@ h2{
         border: solid black 2px;
         font-family: Arial, Helvetica, sans-serif;
         padding-left: 5px;
+        box-shadow: none;
     }
     
     h2{
@@ -248,10 +307,10 @@ h2{
     }
     
     .footer{
-        grid-column: 1 / 5;
+        grid-column: 3 / 5;
         grid-row: 14 / 15;
         font-family: Arial, Helvetica, sans-serif;
-        padding-left: 10px;
+        padding-left: 20px;
     }
 }
 
