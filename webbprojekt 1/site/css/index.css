@@ -15,7 +15,7 @@
 header{
     grid-column: 1 / 13;
     grid-row: 1 / 4;
-    background-color: darkred;
+    background: linear-gradient(to right, darkred, rgb(185, 56, 56));
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -150,28 +150,26 @@ h2{
 @media only screen and (max-device-width: 670px) and (min-device-width: 375px){
     
     .container{
-        width: 375px;
-        height: 1700px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(14, 1fr); 
+        width: 90vw;
+        height: 90vh;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr); 
     }
 
     header{
-        grid-column: 1/ 5;
-        grid-row: 1 / 6;
+        grid-column: 1/ 13;
+        grid-row: 1 / 4;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(5, 1fr);
     }
 
     .bild{
-        grid-column: 1 / 5;
-        grid-row: 1 / 4;
         display: none;
     }
 
     .bild2{
-        grid-column: 1 / 5;
+        grid-column: 1 / 4;
         grid-row: 1 / 4;
         display: grid;
         background-color: white;
@@ -181,10 +179,9 @@ h2{
         justify-content: center;
     }
     
-     .borja{
-        grid-column: 1 / 5;
-        grid-row: 4 / 5;
-
+    .borja{
+        grid-column: 5 / 8;
+        grid-row: 2 / 3;
     }
     
     .borja a{
@@ -201,9 +198,9 @@ h2{
     }
     
     .menudiv{
-        grid-column: 1 / 5;
-        grid-row: 5 / 6;
-        position: sticky;
+        grid-column: 9 / 12;
+        grid-row: 2 / 3;
+        position: relative;
         background: white;
         border: solid black 2px;
      }
@@ -220,6 +217,7 @@ h2{
     
      .menudiv h1{
         text-align: center;
+        padding-top: 30px;
      }
     
      .menudiv:hover h1{
@@ -229,6 +227,8 @@ h2{
     
      .menu {
         display: none;
+        position: absolute;  
+        top: 100px;
      }
     
     .show{
@@ -237,50 +237,10 @@ h2{
     }
     
     .expandDiv {
-        grid-row: 5/6;
-    }
-    /* .dropbtn {
-        background-color: white;
-        color: black;
-        padding: 16px;
-        font-size: 26px;
-        border: solid black 2px;
+        /* grid-row: 2/4; */
     }
     
-    .dropdown {
-        grid-column: 1 / 5;
-        grid-row: 5 / 6;
-        display: grid;
-    }
-    
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 375px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    .dropdown-content a {
-        color: black;
-        padding: 30px 16px;
-        text-decoration: none;
-        display: block;
-    }
-    
-    .dropdown-content a:hover {
-        background-color: #f1f1f1;
-        color: darkred;
-    }
-    
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    
-    .dropdown:hover .dropbtn {
-        background-color:darkgrey;
-    } */
+
     
     .art1{
         grid-column: 1 / 5;
