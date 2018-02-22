@@ -149,7 +149,7 @@ h2{
     padding-left: 10px;
 }
 
-@media only screen and (max-device-width: 670px) and (min-device-width: 375px){
+@media only screen and (max-device-width: 670px){
     
     .container{
         width: 90vw;
