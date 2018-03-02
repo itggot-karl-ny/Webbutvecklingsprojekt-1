@@ -91,7 +91,7 @@ a:hover{
  }
 
  .menu a{
-    font-size: 20px;
+    font-size: 23px;
  }
 
  .menudiv h1{
@@ -106,7 +106,8 @@ a:hover{
  .menu {
     display: none;
     position: absolute;  
-    top: 45px
+    margin-top: 10px;
+    width: 210px;
  }
 
 .show{
@@ -116,6 +117,10 @@ a:hover{
 
 .expandDiv {
     /* grid-row: 2/4; */
+}
+
+li{
+    list-style-type: none;
 }
 
 .art1{
@@ -243,12 +248,17 @@ h2{
      .menu {
         display: none;
         position: absolute;  
-        top: 35px;
+        margin-top: 5px;
+        width: 81px;
      }
     
     .show{
         display: block;
         grid-row: 2 / 4;
+    }
+    
+    li{
+        list-style-type: none;
     }
     
     
