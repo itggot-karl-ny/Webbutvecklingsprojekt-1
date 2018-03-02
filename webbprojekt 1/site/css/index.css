@@ -56,6 +56,10 @@ header{
     border: solid black 2px;
 }
 
+.pil{
+    font-size: 26px;
+}
+
 .borja a{
     color: black;
 }
@@ -252,6 +256,10 @@ h2{
         width: 81px;
      }
     
+     .pil{
+         font-size: 12px;
+     }
+
     .show{
         display: block;
         grid-row: 2 / 4;

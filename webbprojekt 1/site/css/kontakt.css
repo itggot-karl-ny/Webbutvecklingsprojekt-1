@@ -82,7 +82,9 @@ a:hover{
     border: solid black 2px;
  }
 
- 
+ .pil{
+    font-size: 26px;
+}
 
  .menudiv *{
     background-color: white;
@@ -190,8 +192,16 @@ h2{
         border: solid black 2px;
     }
     
+    .pil{
+        font-size: 12px;
+    }
+
     .bild{
         display: none;
+    }
+
+    .pil{
+        font-size: 12px;
     }
     
     .bild2{

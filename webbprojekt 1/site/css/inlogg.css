@@ -82,7 +82,9 @@ a:hover{
     border: solid black 2px;
  }
 
- 
+ .pil{
+    font-size: 26px;
+}
 
  .menudiv *{
     background-color: white;
@@ -303,7 +305,10 @@ h2{
         list-style-type: none;
     }
     
-    
+    .pil{
+        font-size: 12px;
+    }
+
     .rubrik{
         grid-column: 2 / 11;
         grid-row: 4 / 5;
