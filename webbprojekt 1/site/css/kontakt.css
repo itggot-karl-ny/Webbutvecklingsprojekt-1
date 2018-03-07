@@ -117,9 +117,7 @@ a:hover{
     grid-row: 2 / 4;
 }
 
-.expandDiv {
-    /* grid-row: 2/4; */
-}
+
 
 li{
     list-style-type: none;
