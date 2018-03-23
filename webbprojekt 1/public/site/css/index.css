@@ -1,0 +1,306 @@
+.container{
+    height: 850px;
+    width: 850px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    background-color: rgb(155, 149, 149);
+    background: linear-gradient(to right, rgb(104, 104, 104) , lightgrey);
+}
+
+header{
+    grid-column: 1 / 13;
+    grid-row: 1 / 4;
+    background: linear-gradient(to right, darkred, rgb(185, 56, 56));
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: solid black 2px;
+}
+
+.bild{
+    grid-column: 1 / 4;
+    grid-row: 1 / 5;
+    display: grid;
+    background-color: white;
+    border-radius: 50%;
+    border: solid black 2px;
+    align-content: center;
+    justify-content: center;
+}
+
+.bild2{
+    grid-column: 1 / 4;
+    grid-row: 1 / 5;
+    display: none;
+    background-color: white;
+    border-radius: 50%;
+    border: solid black 2px;
+    align-content: center;
+    justify-content: center;
+}
+
+.borja {
+    grid-column: 5 / 8;
+    grid-row: 2 / 3;
+    background-color: white; 
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    align-content: center;
+    text-align: center;
+    border: solid black 2px;
+}
+
+.pil{
+    font-size: 26px;
+}
+
+.borja a{
+    color: black;
+}
+
+.borja a:hover{
+    color: darkred;
+}
+   
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: darkred;
+}
+
+.menudiv{
+    grid-column: 9 / 12;
+    grid-row: 2 / 3;
+    position: relative;
+    background: white;
+    border: solid black 2px;
+ }
+
+ 
+
+ .menudiv *{
+    background-color: white;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .menu a{
+    font-size: 23px;
+ }
+
+ .menudiv h1{
+    text-align: center;
+ }
+
+ .menudiv:hover h1{
+    text-align: center;
+    color: darkred;
+ }
+
+ .menu {
+    display: none;
+    position: absolute;  
+    margin-top: 10px;
+    width: 210px;
+ }
+
+.show{
+    display: block;
+    grid-row: 2 / 4;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+.art1{
+    grid-column: 2 / 12;
+    grid-row: 5 / 9;
+    background-color: white;
+    border: solid black 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+    box-shadow: 5px 5px;
+}
+
+.art2{
+    grid-column: 2 / 12;
+    grid-row: 10 / 12;
+    background-color: white;
+    border: solid black 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+    box-shadow: 5px 5px;
+}
+
+h2{
+    text-align: center;
+}
+
+.footer{
+    grid-column: 11 / 13;
+    grid-row: 12 / 13;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+}
+
+@media only screen and (max-device-width: 670px){
+    
+    .container{
+        width: 90vw;
+        height: 90vh;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(20, 1fr); 
+    }
+
+    header{
+        grid-column: 1 / 13;
+        grid-row: 1 / 4;
+        background: linear-gradient(to right, darkred, rgb(185, 56, 56));
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        border: solid black 2px;
+    }
+    
+    .bild{
+        display: none;
+    }
+    
+    .bild2{
+        grid-column: 1 / 4;
+        grid-row: 1 / 5;
+        display: grid;
+        background-color: white;
+        border-radius: 50%;
+        border: solid black 2px;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .borja {
+        grid-column: 5 / 8;
+        grid-row: 2 / 3;
+        background-color: white; 
+        display: grid;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        align-content: center;
+        text-align: center;
+        border: solid black 2px;
+    }
+    
+    .borja a{
+        color: black;
+    }
+    
+    .borja a:hover{
+        color: darkred;
+    }
+       
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    a:hover{
+        text-decoration: none;
+        color: darkred;
+    }
+    
+    .menudiv{
+        grid-column: 9 / 12;
+        grid-row: 2 / 3;
+        position: relative;
+        background: white;
+        border: solid black 2px;
+     }
+    
+     .menudiv *{
+        background-color: white;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+     }
+    
+     .menu a{
+        font-size: 10px;
+     }
+    
+     .menudiv h1{
+        text-align: center;
+     }
+    
+     .menudiv:hover h1{
+        text-align: center;
+        color: darkred;
+     }
+    
+     .menu {
+        display: none;
+        position: absolute;  
+        margin-top: 5px;
+        width: 81px;
+     }
+    
+     .pil{
+         font-size: 12px;
+     }
+
+    .show{
+        display: block;
+        grid-row: 2 / 4;
+    }
+    
+    li{
+        list-style-type: none;
+    }
+    
+    
+    .art1{
+        grid-column: 2 / 12;
+        grid-row: 5 / 14;
+        background-color: white;
+        border: solid black 2px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 5px;
+        box-shadow: 5px 5px;
+        font-size: 10px;
+    }
+    
+    .art2{
+        grid-column: 2 / 12;
+        grid-row: 15 / 19;
+        background-color: white;
+        border: solid black 2px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 5px;
+        box-shadow: 5px 5px;
+        font-size: 10px;
+    }
+    
+    h2{
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    .footer{
+        grid-column: 11 / 13;
+        grid-row: 19 / 21;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 10px;
+        font-size: 10px;
+    }
+}
+
+
